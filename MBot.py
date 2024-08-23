@@ -4,7 +4,7 @@ from huggingface_hub import InferenceClient
 
 client = InferenceClient(
     model="meta-llama/Meta-Llama-3-8B-Instruct",
-    token=hf-api-key,
+    token=hfapi,
 )
 
 intents = discord.Intents.default()
@@ -33,4 +33,4 @@ async def on_message(message):
     
     await bot.process_commands(message)
 
-bot.run(discord-api-key)
+bot.run(discordapi)
